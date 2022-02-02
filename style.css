@@ -1,0 +1,132 @@
+body  {
+    margin-top: 70px;
+    background-color: #7f8e93;
+    font-family: 'Roboto', sans-serif;
+    color: #00a5e2;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    height: 80px;
+    width: 160px;
+    margin: 8px;
+    background-color: white;
+}
+.box>* {
+    flex: 1 1 80px;
+}
+
+.box {
+    display: flex;
+    align-items: stretch;
+    padding: 5px;
+    background-color: #ffff;
+    color: #00a5e2;   
+}
+
+.box:hover {
+    background-color: #00a5e2;
+    color: #ffff;
+}
+
+.content {
+    display: flex;
+    align-items: stretch;
+    margin-top: 6px;
+    height: 486px;
+    width: 490px;
+    background-color: #00a5e2;
+}
+
+#toggleContainer {
+    display: none;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 58%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -8;
+}
+
+.closeButtonWrapper {
+    text-align: right;
+}
+
+.closeButton {
+    cursor: pointer;
+    color: white;
+}
+
+.buttonCategories {
+    width: 400px;
+    height: 82px;
+    border: none;
+    background-color: #00a5e2;
+    color: white;
+}
+.title {
+    position: absolute;
+    top: 60px;
+    left: 19%;
+    color: white;
+}
+.titleBox {
+    text-transform: uppercase;
+    
+}
+
+.contentBox {
+    color: #ffff;
+}
+
+#contentBox {
+padding:10px;
+}
+
+@media screen and (max-width: 992px) {
+    .column, .content, .main {
+        flex: 10%;
+    }}
+
+@media screen and (max-width: 600px) {
+    .row, .main, .content  {
+        flex-direction: column;
+        width: 100%;
+        height:50%;
+        justify-content: center;
+    }}
+
+@media screen and (max-width: 600px) {
+    .buttonCategories {
+        width: 120%;
+        justify-content: center;
+        margin-left: 60%;
+        border-radius: 10px;
+    }}
+
+@media screen and (max-width: 600px) {
+    .tittle {
+        margin-left: 25%;
+        font-size: 30px;
+        color: #00a5e2;
+    }}
+
+
